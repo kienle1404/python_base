@@ -17,3 +17,5 @@ ipython
 
 ctrl + shift + X: mở extension
 ctrl + shift + E
+
+ctrl + /: comment and uncomment
