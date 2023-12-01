@@ -1,0 +1,19 @@
+miniconda vs anaconda: quan ly enviroment
+conda create --name <env> python=3.8 
+
+conda activate <env>
+conda deactivate
+
+conda env list 
+conda list : list package
+pip list
+
+pip install <package>
+conda install <package>
+
+
+ipython
+
+
+ctrl + shift + X: mở extension
+ctrl + shift + E
