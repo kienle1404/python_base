@@ -9,3 +9,6 @@ for char in inputstr:
 
 for char, count in char_count.items():
     print(f"{char},{count}")
+
+for c in set(inputstr):
+    print(c, inputstr.count(c))
