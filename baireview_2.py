@@ -7,11 +7,20 @@
 # Input: (((((((()))))))) () (()) ((()()())) 
 # Output: [8, 1, 2, 3]
 
+
 def parentheses_depth(parentheses:str)->list:
-    depth = []
-    current = 0
-    for c in parentheses:
-        if c == "(":
-            current += 1
-        elif c == ")":
+    # depth = []
+    # # current = 0
+    # # parentheses = parentheses.split()
+    # # for group in parentheses:
+    # #     depth.append(group.index(")"))
+    # depth = [group.index(")") for group in parentheses.split()]
+    depth = [len(group.split(")")[0]) for group in parentheses.split()]
+    return depth
+
+if __name__ == "__main__":
+    while True:
+        parentheses = input("Enter parentheses: ")
+        print(parentheses_depth(parentheses))  
+                
             

@@ -32,7 +32,7 @@ def compute_distance(movements:tuple)->int:
             x += step
         elif direction == "LEFT":
             x -= step
-    distance = int(sqrt(x*x + y*y))
+    distance = round(sqrt(x*x + y*y)) # round
     return distance
 
 movements = ("UP 5", "DOWN 3", "LEFT 3", "RIGHT 2")
