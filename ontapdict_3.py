@@ -8,4 +8,4 @@ def find_matching(input_list:list, search_string:str)->[int]:
     indicies = [index for index, string in enumerate(input_list) if search_string in string]
     return indicies
 
-print(find_matching(["sensitive", "engine", "rubbish", "comment"], "en"))
+print(find_matching(["sensitive", "engine", "rubbish", "comment"], "en"))   
