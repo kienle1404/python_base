@@ -16,7 +16,7 @@ class LinearRegression():
         epoch = 0
         while abs(gradient) > self.threshold and epoch < self.epoch:
             # compute y
-            print(self.A.shape, X_train.shape, epoch, gradient)
+            print(epoch, gradient)
             y = self.A @ X_train + self.b
             
             # compute loss
@@ -46,3 +46,4 @@ y_test = y[800:, :]
 
 model = LinearRegression()
 model.fit(X_train, y_train)
+model.predict()
