@@ -14,7 +14,11 @@ targets = np.array([[56, 70],
                     [119, 133], 
                     [22, 37], 
                     [103, 119]], dtype='float32')
-
+#  N * 512 * 4
+# N = 50000
+# batching: batch_size = 2**n 
+# 1 epoch/ 1 iteration
+# stochastic gradient descent
 # Convert inputs and targets to tensors
 inputs = torch.from_numpy(inputs)
 targets = torch.from_numpy(targets)
