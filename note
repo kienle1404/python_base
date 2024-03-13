@@ -59,14 +59,30 @@ RLHF
 
 
 classification: 2 label (binary), n-label
-
-linear regression: y = ax + b; y = a1 * x1 + a2 * x2 + an * xn + b = A * X + b
+x = [N, 1]
+X = [N, D] -> [N, H] + [1, H] -> [N, H]
+A = [H, D] -> number of parameter: H * D
+b = [1, H]
+linear regression: y = ax + b; y = a1 * x1 + a2 * x2 + an * xn + b = X @ A.T + b
 non-linear regression: y = f(x)
+z = g(y) = g(f(x)) = y * M.T + n
 
+z: latent representation/hidden feature
+x -(f)> z -(g)-> y_1
+loss = mse(y_1, y) = (y_1 - y) ** 2 = (g(f(x)) - y) ** 2 = 
 initialize 
 y_train_1 = A * X_train + b
 loss = mse(y_train, y_train_1)
 A = A + gradient * alpha
+
+iteration:
+forward
+loss
+[back propagation -> gradient]: backward
+update parameter
+keras/tensorflow 
+pytorch: tensor
+
 
 logistic regression: (supervised)
 y - discrete
