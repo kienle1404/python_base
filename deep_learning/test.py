@@ -14,4 +14,5 @@ def sum_2_digit(n_layer, n_para):
 if __name__ == "__main__":
     a = int(args.n_layer)
     b = int(args.n_para)
-    print(sum_2_digit(config.n_layer, config.n_para))
+    args.epoch = 10
+    print(sum_2_digit(config.n_layer, config.n_para), args.epoch)

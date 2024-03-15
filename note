@@ -65,8 +65,10 @@ A = [H, D] -> number of parameter: H * D
 b = [1, H]
 linear regression: y = ax + b; y = a1 * x1 + a2 * x2 + an * xn + b = X @ A.T + b
 non-linear regression: y = f(x)
-z = g(y) = g(f(x)) = y * M.T + n
-
+z = g(y) = softmax(g(f(x))) = y * M.T + n
+X[N, D]
+[H, W] -> [N, H, D] -> [N, 1]
+[D] -> [N, D] -> [N, ]
 z: latent representation/hidden feature
 x -(f)> z -(g)-> y_1
 loss = mse(y_1, y) = (y_1 - y) ** 2 = (g(f(x)) - y) ** 2 = 
