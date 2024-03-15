@@ -89,3 +89,6 @@ pytorch: tensor
 logistic regression: (supervised)
 y - discrete
 cross entropy (classification)
+
+
+data augmentation
