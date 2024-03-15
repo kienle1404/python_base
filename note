@@ -1,0 +1,91 @@
+np.array(a, dtype=int)
+
+
+np.zeros(shape, dtype=dtype)
+np.zeros_like(array, dtype=dtype)
+
+np.ones(shape, dtype=dtype)
+np.ones_like(array, dtype=dtype)
+np.full(shape, fill_value=, dtype=dtype)
+
+eye: nxn 
+np.eyes(n, dtype=dtype)
+
+np.arange(start,stop,step)
+np.linspace(start, stop, n_element)
+
+np.random.random(shape, dtype=dtype)
+
+contiguous
+index; slicing; fancy index(masking)
+
+f(X) = X * A (mxn)
+g(X) = B * X (axb)
+
+X(p x q) -> reshape -> f -> reshape -> g -> Y
+
+axis (index cua shape) -> default = 0/all 
+argmax/argmin -> index phan tu max/min (index theo size array)
+flatten
+
+
+broadcasting
+element-wise 
+
+a: 2, 4, 5
+b: 1, 4, 1
+a+b: b -> 2,4  -> operator
+CPU/GPU/TPU
+data (image; video; audio; text) -> number(x) -> algorithm (ML/DL)-> 0/1 -> dog/cat
+
+neural network: w, b (weight, bias)
+layer:
+x*w + b
+
+data: x; y(label)
+pipeline: 
+data(1000)(80:10:10) -> preprocess -> training(800)/dev(100)/testing(100) -> xay dung algorithm(NN)
+-> baseline -> improve -> metrics -> release
+ 
+computer vision
+speech processing
+natural language processing(NLP) LLM
+reinforcement learning(robot)
+
+supervised learning: data co label
+unsupervised learning: data khong co label
+self-supervised learning: data co label va data khong co label
+RLHF
+
+
+classification: 2 label (binary), n-label
+x = [N, 1]
+X = [N, D] -> [N, H] + [1, H] -> [N, H]
+A = [H, D] -> number of parameter: H * D
+b = [1, H]
+linear regression: y = ax + b; y = a1 * x1 + a2 * x2 + an * xn + b = X @ A.T + b
+non-linear regression: y = f(x)
+z = g(y) = softmax(g(f(x))) = y * M.T + n
+X[N, D]
+[H, W] -> [N, H, D] -> [N, 1]
+[D] -> [N, D] -> [N, ]
+z: latent representation/hidden feature
+x -(f)> z -(g)-> y_1
+loss = mse(y_1, y) = (y_1 - y) ** 2 = (g(f(x)) - y) ** 2 = 
+initialize 
+y_train_1 = A * X_train + b
+loss = mse(y_train, y_train_1)
+A = A + gradient * alpha
+
+iteration:
+forward
+loss
+[back propagation -> gradient]: backward
+update parameter
+keras/tensorflow 
+pytorch: tensor
+
+
+logistic regression: (supervised)
+y - discrete
+cross entropy (classification)

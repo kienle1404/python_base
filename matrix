@@ -1,0 +1,23 @@
+3x3: 
+A = [
+    3 4 5 
+    4 5 6
+    7 8 9
+] (3x3)
+
+B = [
+    1 2 3 
+    2 3 4 
+    3 4 5
+] (3x3)
+C = [
+    x y z 
+    p q r
+    a b c
+]
+
+A * I = A
+A * B = (mxn) * (nxq) = (mxq)
+
+transpose:
+    A(mxn) -> (nxm)
