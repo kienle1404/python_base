@@ -14,6 +14,26 @@ conda install <package>
 
 ipython
 
+git commands:
+git init
+git clone [url]
+git config --global user.email "[email]"
+
+git status
+git add
+git reset
+git diff ; git diff --staged
+git commit -m "[message]"
+git commit --amend --no-edit //edit a commit
+
+git log ; git log --oneline ; git log -S "[keyword]" //search for a commit with keyword
+git branch [branch name] //create a new branch
+git checkout [branch name] //switch to a branch 
+git merge [branch]
+
+git alias:
+git config --global alias.co "checkout" 
+-> git co branch_name (instead of git checkout branch_name)
 
 ctrl + shift + X: mở extension
 ctrl + shift + E: mở explorer (file)
